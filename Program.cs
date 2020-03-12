@@ -94,27 +94,28 @@ namespace MenuApp
             {
                 Console.Clear();
             
-                Console.Write("Please Enter Your Age: ");
+                Console.Write("Please Enter Your Age:");
+                Console.Write(" ");
             // Take age as input
             int age = int.Parse(Console.ReadLine());
            
 
             if (age > 5 && age < 20)
             {
-                Console.Write("Youth Price : 80 SEK");
+                Console.Write("\nYouth Price : 80 SEK");
             }
             else if (age > 64 && age < 100)
             {
-                Console.Write("Pensioner Price : 90 SEK");
+                Console.Write("\nPensioner Price : 90 SEK");
             }
             else 
             {
                 if (age < 5 || age > 100)
                 {
-                    Console.Write("Your Entry of Free of cost");
+                    Console.Write("\nYour Entry of Free of cost");
                 }
                 else { 
-                Console.Write("Standard Price : 120 SEK");
+                Console.Write("\nStandard Price : 120 SEK");
                 }
             }
 
