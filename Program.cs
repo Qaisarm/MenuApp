@@ -94,8 +94,11 @@ namespace MenuApp
             {
                 Console.Clear();
             
+
                 Console.Write("Please Enter Your Age:");
                 Console.Write(" ");
+
+
             // Take age as input
             int age = int.Parse(Console.ReadLine());
            
