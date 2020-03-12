@@ -12,7 +12,7 @@ namespace MenuApp
             bool displayMenu = true;
             while (displayMenu)
             {
-                
+                // Displays the Main Menu to User
                 displayMenu = MainMenu();
             }
 
@@ -21,14 +21,14 @@ namespace MenuApp
 
         private static bool MainMenu()
         {
-            
+            // Takes input from the user
             Console.WriteLine(" ");
             Console.WriteLine("Press (1) to Check the Main Menu:");
             Console.WriteLine("Press (0) to Exit:");
 
             string result = Console.ReadLine();
 
-           
+           // Initialize the user options
                 if (result == "1")
                 {
                 
@@ -53,8 +53,7 @@ namespace MenuApp
             
           
         }
-
-      
+          // This is the second Menu
             private static bool SecondMenu()
             {
                 Console.Clear();
@@ -90,12 +89,14 @@ namespace MenuApp
                     return true;
                 }
             }
+        //Class for Menu Option for Price
             private static void YouthSeniorCitizen()
             {
                 Console.Clear();
-                Console.Write("Please Enter Your Age:");
-
-                int age = int.Parse(Console.ReadLine());
+            
+                Console.Write("Please Enter Your Age: ");
+            // Take age as input
+            int age = int.Parse(Console.ReadLine());
            
 
             if (age > 5 && age < 20)
