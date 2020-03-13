@@ -36,7 +36,6 @@ namespace MenuApp
                 answer = Console.ReadLine();
 
 
-
                 //If answer is not null or empty string
 
                 if (!string.IsNullOrEmpty(answer))
@@ -49,17 +48,12 @@ namespace MenuApp
 
                 }
 
-
-
             } while (correct);  //until we have get a correct value
-
 
 
             return answer;  //return value
 
         }
-
-
 
         public static int AskForInt(string prompt)
 
@@ -70,14 +64,11 @@ namespace MenuApp
             int answer;  //Scope
 
 
-
             do //Repeat
 
             {
 
                 string input = AskForString(prompt);
-
-
 
                 //Try to parse string to int returns bool
 
@@ -91,15 +82,11 @@ namespace MenuApp
 
                     //Write errormessage
 
-                    Console.WriteLine("Wrong format try again");
+                    Console.WriteLine("This is not a number\n Please enter you age again.");
 
                 }
 
-
-
             } while (!success);
-
-
 
             //Returns parsed string
 
