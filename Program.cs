@@ -51,10 +51,10 @@ namespace MenuApp
                              // Shows the Menu Options
             Console.WriteLine("Select from the Following option:\n" +
                 " ");
-            Console.WriteLine("If you Want to know the Ticket Price Press 1 ");
-            Console.WriteLine("If you Want to Print Something Ten Times Press 2 ");
-            Console.WriteLine("If you want to play Three Word Game Press 3");
-            Console.WriteLine("If You want to exit this Menu Press 9 ");
+            Console.WriteLine("If you Want to know the Ticket Price Press 1 \n");
+            Console.WriteLine("If you Want to Print Something Ten Times Press 2 \n");
+            Console.WriteLine("If you want to play Three Word Game Press 3\n");
+            Console.WriteLine("If You want to exit this Menu Press 9 \n");
             // Takes Options input
             string result = Console.ReadLine();
             if (result == "1")
@@ -63,6 +63,7 @@ namespace MenuApp
                 Console.WriteLine(" ");
                 Console.WriteLine("Press (1) for Single Ticket");
                 Console.WriteLine("Press (2) for Group Ticket");
+
                 // Takes input Options
                 string ticketType = Console.ReadLine();
                 if (ticketType == "1")
@@ -95,9 +96,6 @@ namespace MenuApp
                 return true;
             }
         }
-
-
-
 
     }
 }

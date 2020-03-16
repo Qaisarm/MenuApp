@@ -16,6 +16,7 @@ namespace MenuApp
             //  the input string.
             string inputString = Console.ReadLine();
 
+            // Removes all spaces and splits the string
             string[] X = inputString.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
 
             Console.WriteLine("     ");
